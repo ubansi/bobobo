@@ -22,3 +22,6 @@
 
 # 実行環境
 Node.js 
+
+# license
+MIT
