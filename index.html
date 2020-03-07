@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobobo</title>
+    <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <h1>ランダムで『ボ』を挿入するよ</h1>
+    <div id="bobobo">
+        <p>{{ result }}</p>
+        <input v-model="message" placeholder="好きな言葉を入力してください">
+        <button v-on:click="bobobo">変換</button>
+    </div>
+    <script src="./script/bobobo.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
