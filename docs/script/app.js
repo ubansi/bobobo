@@ -1,5 +1,6 @@
 const bobobo = new Vue({
     el: '#bobobo',
+    vuetify: new Vuetify(),
     data: {
         message: '',
         result: 'ボボボ'
