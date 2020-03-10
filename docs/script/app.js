@@ -2,8 +2,8 @@ const bobobo = new Vue({
     el: '#bobobo',
     vuetify: new Vuetify(),
     data: {
-        message: '',
-        result: 'ボボボ'
+        message: 'ボンバーマン',
+        result: insertBoRandomTimes('ボンバーマン')
     },
     methods: {
         bobobo: function(event){

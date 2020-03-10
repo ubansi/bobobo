@@ -14,7 +14,7 @@ const insertBoToRandom = str => {
 const insertBoRandomTimes = str => {
     const boCount = parseInt(Math.random() * 5);
 
-    for (let i = 0; i < boCount; i++)
+    for (let i = 0; i <= boCount; i++)
         str = insertBoToRandom(str);
 
     return str;
