@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 
 <head>
     <meta charset="UTF-8">
@@ -12,18 +12,27 @@
 
 <body>
     <div id="bobobo">
+
         <v-app id="inspire">
             <v-content>
                 <v-container>
                     <v-toolbar-title>ランダムで『ボ』を挿入するよ</v-toolbar-title>
-                    <v-spacer></v-spacer>
-                    <p class="font-weight-light">{{ result }}</p>
-                    <v-spacer></v-spacer>
-                    <v-text-field label="input" v-model="message" v-on:keypress.enter="bobobo" placeholder="好きな言葉を入力してください"></v-text-field>
+                    <div class="text-center">
+                        <v-text-field label="input" v-model="message" v-on:keypress.enter="bobobo"
+                            placeholder="好きな言葉を入力してください">{{message}}</v-text-field>
+                    </div>
                     <v-layout>
                         <v-spacer></v-spacer>
                         <v-btn class="ma-2" v-on:click="bobobo" outlined color="indigo">変換</v-btn>
                     </v-layout>
+                </v-container>
+                <v-container>
+                    <v-alert border="bottom" color="blue-grey" dark>
+                        {{result}}
+                        <v-btn dark small absolute bottom right v-on:click="copyResult" fab>
+                            <v-icon>mdi-attachment</v-icon>
+                        </v-btn>
+                    </v-alert>
                 </v-container>
             </v-content>
         </v-app>

@@ -2,12 +2,17 @@ const bobobo = new Vue({
     el: '#bobobo',
     vuetify: new Vuetify(),
     data: {
-        message: '',
-        result: 'ボボボ'
+        message: 'ボンバーマン',
+        result: insertBoRandomTimes('ボンバーマン')
     },
     methods: {
-        bobobo: function(event){
+        bobobo: function (event) {
             this.result = insertBoRandomTimes(this.message)
+        },
+        copyResult: function () {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(this.result);
+            }
         }
     }
-  })
+})
