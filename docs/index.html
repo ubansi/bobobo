@@ -29,7 +29,7 @@
                 <v-container>
                     <v-alert border="bottom" color="blue-grey" dark>
                         {{result}}
-                        <v-btn dark small absolute bottom right fab>
+                        <v-btn dark small absolute bottom right v-on:click="copyResult" fab>
                             <v-icon>mdi-attachment</v-icon>
                         </v-btn>
                     </v-alert>

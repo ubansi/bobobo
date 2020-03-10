@@ -6,8 +6,13 @@ const bobobo = new Vue({
         result: insertBoRandomTimes('ボンバーマン')
     },
     methods: {
-        bobobo: function(event){
+        bobobo: function (event) {
             this.result = insertBoRandomTimes(this.message)
+        },
+        copyResult: function () {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(this.result);
+            }
         }
     }
-  })
+})
