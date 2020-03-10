@@ -19,7 +19,7 @@
                     <v-spacer></v-spacer>
                     <p class="font-weight-light">{{ result }}</p>
                     <v-spacer></v-spacer>
-                    <v-text-field label="input" v-model="message" placeholder="好きな言葉を入力してください"></v-text-field>
+                    <v-text-field label="input" v-model="message" v-on:keypress.enter="bobobo" placeholder="好きな言葉を入力してください"></v-text-field>
                     <v-layout>
                         <v-spacer></v-spacer>
                         <v-btn class="ma-2" v-on:click="bobobo" outlined color="indigo">変換</v-btn>
