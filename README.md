@@ -1,27 +1,21 @@
-ボボボ
+bobobo
 --
-入力された単語にボをランダムで追加するNode.jsで動くスクリプトです。
+入力された単語にボをランダムで追加するスクリプトです。
+以下のURLにdoc/index.htmlが公開される。
+
+https://ubansi.github.io/bobobo/
 
 # 実行方法
+docs/index.htmlをブラウザで開くことで画面の確認ができる。
 
-```
-> node bobobo.js ボンバーマン
-ボボボンバボーマン
-```
 
-以下のように打つことで直接クリップボードにコピーできます。
+# 依存ライブラリ
+* vue.js
+* vuetify
+今のところどちらもCDNから利用しています。
 
-```
-> node bobobo.js ごめんなさい | pbcopy
-```
-
-クリップボードの内容
-```
-ごめんなさいボボボ
-```
-
-# 実行環境
-Node.js 
+# How To Contribute
+あったらいい機能をIssueにあげてくれたら更新するかも？
 
 # license
 MIT
