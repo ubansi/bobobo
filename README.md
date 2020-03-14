@@ -12,6 +12,7 @@ docs/index.htmlをブラウザで開くことで画面の確認ができる。
 # 依存ライブラリ
 * vue.js
 * vuetify
+
 今のところどちらもCDNから利用しています。
 
 # How To Contribute
